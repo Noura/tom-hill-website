@@ -18,27 +18,47 @@
             <div class="row">
                 <div class="col-md-12">
                     <ul class="nav nav-tabs">
-                        {% for page in pages %}
+                        
                             <li
-                            {% if current_page['tabname'] == page['tabname']-%}
-                                class="active"
-                            {%- endif -%}>
-                                <a href="/{{page['path']}}">
-                                    {{page['tabname']}}
+                            >
+                                <a href="/">
+                                    About
                                 </a>
                             </li>
-                        {% endfor %}
+                        
+                            <li
+                            >
+                                <a href="/lessons">
+                                    Lessons
+                                </a>
+                            </li>
+                        
+                            <li
+                            class="active">
+                                <a href="/contact">
+                                    Contact
+                                </a>
+                            </li>
+                        
                     </ul>
                 </div>
             </div>
 
-            {% block body %}{% endblock body %}
+            
+
+<address>
+    <strong>Tom Hill</strong><br>
+    (617) 999 - 4248<br>
+    <span>thomm</span>use1<span>@</span>aol.com<br>
+</address>
+
+
 
         </div>
 
-        {% block js %}
+        
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script> 
             <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-        {% endblock js %}
+        
     </body>
 </html>

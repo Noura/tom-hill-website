@@ -14,7 +14,7 @@ pages = [ {
             'template': 'lessons.html',
             'path': 'lessons',
             'tabname': 'Lessons'
-          }
+          },
           {
             'template': 'contact.html',
             'path': 'contact',
