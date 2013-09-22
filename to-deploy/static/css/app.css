@@ -1,3 +1,18 @@
 .container {
     max-width: 700px;
 }
+
+#portrait {
+    margin: 1em 2px;
+    width: 100%;
+}
+
+blockquote {
+    padding: 2em 0;
+    margin: 0;
+    border-width: 0;
+}
+
+.top {
+    margin-top: 1em;
+}
