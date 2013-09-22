@@ -4,6 +4,6 @@ Tom Hill is a professional clarinetist performing and teaching in Boston. This w
 
 ### Web tools
 
-jinja2 templates
-python script to render the templates to static pages
-bootstrap
+ - jinja2 templates
+ - python script to render the templates to static pages
+ - bootstrap
