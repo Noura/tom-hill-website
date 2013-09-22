@@ -9,44 +9,58 @@
     </head>
     <body>
 
-        <div class="container">
+        <div class="container-with-sidebar">
 
             <div class="page-header" role="banner">
-                <h1>Tom Hill, Clarinetist</h1>
+                <h1>Tom Hill <small>Clarinetist</small></h1>
             </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="nav nav-tabs">
-                        
-                            <li
-                            class="active">
-                                <a href="/">
-                                    About
-                                </a>
-                            </li>
-                        
-                            <li
-                            >
-                                <a href="/lessons">
-                                    Lessons
-                                </a>
-                            </li>
-                        
-                            <li
-                            >
-                                <a href="/contact">
-                                    Contact
-                                </a>
-                            </li>
-                        
-                    </ul>
+            <div class="content-container">
+
+                <div class="sidebar">
+
                 </div>
-            </div>
 
-            
+                <div class="mainbar">
 
-<div class="row">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav nav-tabs">
+                                
+                                <li data-tabname="About"
+                                    class="tab
+                                    active">
+                                        <a href="#">
+                                            About
+                                        </a>
+                                    </li>
+                                
+                                <li data-tabname="Lessons"
+                                    class="tab
+                                    ">
+                                        <a href="#">
+                                            Lessons
+                                        </a>
+                                    </li>
+                                
+                                <li data-tabname="Contact"
+                                    class="tab
+                                    ">
+                                        <a href="#">
+                                            Contact
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+
+                    <div data-tabname="About"
+                         class="tab-content 
+                             ">
+                             <div class="row">
     <div class="col-md-4">
         <img id="portrait" src="/static/img/tom_hill_small.jpg"/>
     </div>
@@ -82,14 +96,76 @@ He holds both a Bachelor's and a Master's Degree with Honors from The New Englan
 <p>
 In addition to his private studio, his own teaching credentials have included artist-professional affiliations teaching clarinet and chamber music at the Massachusetts Institute of Technology, The New England Conservatory, the Boston Conservatory, The Longy School of Music, and the university systems of New York, California, Massachusetts and Missouri. And he has been a visiting artist/teacher in a wide range of musical settings.
 </p>
+                    </div>
 
+                    
 
+                    <div data-tabname="Lessons"
+                         class="tab-content 
+                             
+                                 hide
+                             ">
+                             <p class="top">
+Tom teaches lessons from his studio near Porter's Square and welcomes new students as his schedule allows.
+</p>
+
+<h4>Teaching Philosophy</h4>
+
+<p>
+Over many years as a player and teacher of the clarinet and of music, I have developed a class of students which has embraced those who are (or are about to be) very accomplished professional players, other students who are gifted semi-professional players, and also some students whose varied involvements and backgrounds would probably best define them as dedicated avocational players of virtually all ages.
+</p>
+
+<p>
+Irrespective of a particular student's level of accomplishment at a given moment, the common principle that distinguishes them and makes them my students is that <strong>they all care to know what makes it real</strong>. They want to discover for themselves what is genuine; what the craft is and what first-class i. They know that&mdash;somewhere out there within the deep blue sea of acoustics, physical finesse, artistic instinct&mdash;there exists real clarinet playing and real musical art to know about, and that they would like to have as much of that as possible available to them in their own lives. Getting people moving in that direction is what my teaching is all about.
+</p>
+
+<p>
+I meet every stuent exactly where they are at this moment.
+</p>
+
+<p>
+But I <strong>never</strong> condescend. In other words, I never assume that certain students are in some way limited or need to be taught in some limited way.
+</p>
+
+<p>
+On the contrary&mdash;Igrant that <strong>every</strong> student is deserving and able to receive everything I have to give them from the cleanest and highest perspective possible, to do with what they can.
+</p>
+
+<p>
+This was worked really quite nicely.
+</p>
+
+<p>
+Any interested person to whom this prospect seems compelling is most welcome to inquire.
+</p>
+                    </div>
+
+                    
+
+                    <div data-tabname="Contact"
+                         class="tab-content 
+                             
+                                 hide
+                             ">
+                             <address class="top">
+    <strong>Tom Hill</strong><br>
+    (617) 999 - 4248<br>
+    <span>thomm</span>use1<span>@</span>aol.com<br>
+</address>
+                    </div>
+
+                    
+
+                </div>
+
+            </div>
 
         </div>
 
         
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script> 
             <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+            <script src="/static/js/app.js"></script>
         
     </body>
 </html>

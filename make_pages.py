@@ -33,14 +33,15 @@ def main():
     os.makedirs(deploy_target)
     shutil.copytree(os.path.join(here, 'static'), os.path.join(deploy_target, 'static'))
 
-    for page in pages:
-        tem = templates.get_template(page['template'])
-        ctx = { 'pages': pages , 'current_page': page }
-        out_dir = os.path.join(deploy_target, page['path'])
-        if page['path']:
-            os.makedirs(out_dir)
-        with codecs.open(os.path.join(out_dir, 'index.html'), 'w') as out:
-            out.write(tem.render(**ctx))
+    # all content is in one file now; show and hide pages with JS
+    current_page = pages[0]
+    tem = templates.get_template('base.html')
+    ctx = { 'pages': pages, 'current_page': current_page }
+    out_dir = os.path.join(deploy_target, current_page['path'])
+    if current_page['path']:
+        os.makedirs(out_dir)
+    with codecs.open(os.path.join(out_dir, 'index.html'), 'w') as out:
+        out.write(tem.render(**ctx))
 
 if __name__ == '__main__':
     main()

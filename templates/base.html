@@ -9,36 +9,60 @@
     </head>
     <body>
 
-        <div class="container">
+        <div class="container-with-sidebar">
 
             <div class="page-header" role="banner">
                 <h1>Tom Hill <small>Clarinetist</small></h1>
             </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="nav nav-tabs">
-                        {% for page in pages %}
-                            <li
-                            {% if current_page['tabname'] == page['tabname']-%}
-                                class="active"
-                            {%- endif -%}>
-                                <a href="/{{page['path']}}">
-                                    {{page['tabname']}}
-                                </a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
+            <div class="content-container">
 
-            {% block body %}{% endblock body %}
+                <div class="sidebar">
+
+                </div>
+
+                <div class="mainbar">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ul class="nav nav-tabs">
+                                {% for page in pages %}
+                                <li data-tabname="{{page['tabname']}}"
+                                    class="tab
+                                    {% if current_page['tabname'] == page['tabname']-%}
+                                        active
+                                    {%- endif -%}">
+                                        <a href="#">
+                                            {{page['tabname']}}
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+
+                    {% for page in pages %}
+
+                    <div data-tabname="{{page['tabname']}}"
+                         class="tab-content 
+                             {% if current_page['tabname'] != page['tabname'] %}
+                                 hide
+                             {% endif %}">
+                             {% include page['template'] %}
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
 
         </div>
 
         {% block js %}
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script> 
             <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+            <script src="/static/js/app.js"></script>
         {% endblock js %}
     </body>
 </html>
