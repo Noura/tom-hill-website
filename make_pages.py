@@ -15,11 +15,6 @@ pages = [ {
             'path': 'lessons',
             'tabname': 'Teaching'
           },
-          {
-            'template': 'contact.html',
-            'path': 'contact',
-            'tabname': 'Contact'
-          }
         ]
 
 def main():
