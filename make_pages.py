@@ -13,7 +13,7 @@ pages = [ {
           {
             'template': 'lessons.html',
             'path': 'lessons',
-            'tabname': 'Lessons'
+            'tabname': 'Teaching'
           },
           {
             'template': 'contact.html',

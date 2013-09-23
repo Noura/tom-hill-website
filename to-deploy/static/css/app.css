@@ -1,10 +1,40 @@
+html {
+    border-left: 30px solid rgb(3, 53, 21);
+}
+html, body {
+    background-color: rgb(253, 255, 253);
+    color: rgb(10, 10, 10);
+}
+
 .container-with-sidebar {
     width: 950px;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 .page-header {
     margin: 20px 0;
+}
+.page-header,
+.nav-tabs,
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover,
+.sidebar-title {
+    border-color: #187c38;
+}
+.nav-tabs>li>a:hover {
+    border-bottom-color: #187c38;
+    background-color: rgb(240, 245, 243);
+}
+small, h1 small, blockquote small,
+.nav-tabs>li>a,
+.nav-tabs>li>a:hover {
+    color: #96A59D;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover {
+    color: #1C6B35;
+    border-bottom-color: transparent;
 }
 
 .mainbar {
@@ -15,15 +45,14 @@
 
 .sidebar {
     width: 215px;
-    margin-left: 30px;
-    border-left: 2px solid #eee;
-    padding-left: 15px;
+    margin-left: 35px;
     display: inline-block;
     float: left;
 }
 .sidebar-title {
     padding: 10px 5px;
-    border-bottom: 2px solid #eee;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
     margin-bottom: .9em;
 }
 
