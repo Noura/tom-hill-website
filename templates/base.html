@@ -17,10 +17,6 @@
 
             <div class="content-container">
 
-                <div class="sidebar">
-
-                </div>
-
                 <div class="mainbar">
 
                     <div class="row">
@@ -55,6 +51,11 @@
 
                 </div>
 
+                <div class="sidebar">
+                    <div class="sidebar-title">Listen</div>
+                    <div id="songs"></div>
+                </div>
+
             </div>
 
         </div>
@@ -62,7 +63,9 @@
         {% block js %}
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script> 
             <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+            <script src="http://connect.soundcloud.com/sdk.js"></script>
             <script src="/static/js/app.js"></script>
         {% endblock js %}
+
     </body>
 </html>
