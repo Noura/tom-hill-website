@@ -13,7 +13,7 @@ window.onload = function(){
         client_id: 'e6cd33d3f7b5e434c0b1d20491181fe0'
     });
 
-    var track_url = 'http://soundcloud.com/forss/flickermood';
+    var track_url = 'https://soundcloud.com/culurienneldoreth/sets/sample-clarinet-music';
     SC.oEmbed(track_url, {
         auto_play: false,
         show_comments: false,
