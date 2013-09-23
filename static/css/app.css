@@ -1,9 +1,20 @@
+@font-face {
+    font-family: 'Cardo';
+    src: url('/static/fnt/Cardo/Cardo104s.ttf');
+}
 html {
     border-left: 30px solid rgb(3, 53, 21);
 }
 html, body {
     background-color: rgb(253, 255, 253);
     color: rgb(10, 10, 10);
+}
+
+html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cardo', 'Helvetica', sans-serif;
+}
+body {
+    font-size: 16px;
 }
 
 .container-with-sidebar {
@@ -95,4 +106,7 @@ blockquote {
     position: relative;
     clear: both;
     padding: 1em 0;
+}
+.credits, .credits a {
+    color: #96A59D;
 }
